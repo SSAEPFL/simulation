@@ -1,0 +1,8 @@
+How to retrieve a 3le with LEO objects : 
+	- https://www.space-track.org/ -> Query Builder
+	- Class : gp | Order by : NORAD_CAT_ID | Sort : Ascending | Format : 3le
+	- Predicate1 -> MEAN_MOTION > 11.25 (Because <2000km, objects in orbits do at least 11.25 revolutions per day) 
+	- Predicate2 -> ECCENTRICITY < 0.25 (To not be in High Elliptical Orbit)
+	- Build Query -> Run Query -> Save as text file
+
+Or : https://www.space-track.org/basicspacedata/query/class/gp/MEAN_MOTION/%3E11.25/ECCENTRICITY/%3C0.25/orderby/NORAD_CAT_ID%20asc/format/3le/emptyresult/show
